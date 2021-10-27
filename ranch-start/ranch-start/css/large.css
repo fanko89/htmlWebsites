@@ -1,0 +1,22 @@
+@media only screen and (min-width:1028px) {
+
+/* navigation starts here*/
+main {
+    max-width: 75rem;
+    margin: auto;
+}
+nav ul {padding-left: 2%;}
+nav ul li {flex-basis: auto;}
+nav a {padding: .5rem 1rem;}/*1 rem push menu items away*/
+
+main figure {
+    width: 31%;
+}
+
+div.news {
+    clear: both; /* don't have to add clear or rule because it carries over from the medium.css*/
+    column-count: 3;
+}
+
+
+} /* end of media query*/
