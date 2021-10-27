@@ -1,0 +1,105 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    font-size: 16px;
+}
+
+/* header rules */
+div#headerWrapper {
+    background-color: $primaryColor;
+}
+
+header {
+    padding: 2px $gutter;
+    margin:auto;
+    height: 115px;
+    
+    
+    h1 {
+        margin: 78px 0 0 0;  
+        font-size: 1.5rem;
+        font-weight: $heavyWeight;
+         
+    }//end of h1
+    h2 { 
+        font-size: 0px; 
+        font-weight: $regularWeight;
+        margin:0px;
+        color: transparent;
+    }
+    img { 
+        float:left;
+        padding-right: 10px;
+        width:125px;
+    }
+
+} //end of header
+
+/* navigation rules */
+div#navWrapper {
+    background-color: #111;
+}
+nav {
+    ul{margin:0; padding: 0;}
+    li {list-style-type: none;}
+    li.active {background-color: #333}
+    a {
+    display: block;
+    padding: .8rem 0; /*44px min*/
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+    }// end of a
+    a:hover {background-color: #444;}
+}//end nav
+
+
+/* main rules */
+div#contentWrapper {
+    background-color: white;
+}
+main {
+    background-color: rgb(188, 233, 178);
+    display: block; padding: 1rem $gutter;
+    max-width: 75rem;
+    h1 {
+    color: $primaryColor;
+    font-weight: $heavyWeight;
+    }//end of h1
+    .hero{
+        width:100%;
+    }
+    figure{
+    margin: 0;
+    width: 100%;
+    img {width: 100%;}
+    }//end of figure
+
+    figcaption {text-align: center; font-size: .8rem;}
+}//end of main
+
+
+/* footer rules */
+div#footerWrapper {
+    background-color: $primaryColor;
+}
+footer {
+    
+    text-align: center;
+    padding: 1rem $gutter;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
