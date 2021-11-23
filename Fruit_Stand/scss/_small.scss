@@ -1,0 +1,130 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 200;
+}
+
+/* logo rules */
+div#headerWrapper {
+    background-color: $primaryColor;
+}
+/* header rules */
+header {
+    display: grid;
+    grid-template-columns: 135px auto ;
+   
+    
+    
+    h1 {
+        margin: 2rem 0 0 0;  
+        font-size: 1.5rem;
+       
+         
+    }//end of h1
+    h2 { 
+        font-size: .7rem; 
+        font-weight: 200;
+        margin: auto;
+        padding: 0px;
+       
+    }
+    img { 
+        float:left;
+        width:110px;
+    }
+
+} //end of header
+
+/* navigation rules */
+div#navWrapper {
+    background-color: #111;
+}
+nav {
+    ul{margin:0; padding: 0;}
+    li {list-style-type: none;}
+    li.active {background-color: rgb(67, 67, 67);}
+    a {
+    display: block;
+    padding: .8rem 0; /*44px min*/
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+    }// end of a
+    a:hover {background-color:rgb(67, 67, 67);}
+}//end nav
+
+
+/* main rules */
+main {
+        padding: 0 2%;
+        min-height: 10rem;
+}
+main h1 {
+    color: $primaryColor;
+    text-align: center;
+    font-weight: 500;
+    }
+main p { 
+        text-align: center;
+    }
+
+/*Image gallery */
+div.fruitGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.fruitGallery figure {
+    flex-basis: 96%;
+    margin: 1rem 2%;
+    text-align: center;
+}
+div.fruitGallery figure img {
+    width: 100%;
+}
+//end of image gallery
+//end of main
+
+/* footer rules */
+div#footerWrapper {
+    background-color: $primaryColor;
+}
+footer {
+    
+    text-align: center;
+    padding: 1rem $gutter;
+}
+
+/* social icon rules */
+
+div.social {
+    display: flex;
+    padding: 1rem 0;
+
+}
+
+div.social a {
+    flex-basis: 25%;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    
+}
+
+div.social a:hover {
+color:aqua;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
