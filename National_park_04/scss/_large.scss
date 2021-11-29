@@ -1,0 +1,34 @@
+header,nav, main, footer{
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header{
+        background-image: url(../images/header-large.jpg);
+    height: 140px;
+    background-size: cover;
+    background-position: center bottom;//cropping off the top and not the bottom when increasing image size
+    }
+    
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+main {
+        .card{
+            flex-basis: 31.3%;
+        }
+    }
+    
+
+/*----------- FOOTER --------------*/
+    

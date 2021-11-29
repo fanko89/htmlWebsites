@@ -1,0 +1,164 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%;
+    margin: 0 auto; 
+    -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+#headerWrapper {
+    background-color: #ddd;
+}
+header {
+    padding: .5rem 2%;
+    background-image: url(../images/header-small.jpg);
+    height: 140px;
+    color: white;
+}
+header h1 {
+    margin:0;
+    padding: 4rem 0 0 0;
+    
+}
+header h2 {
+    margin: 0;
+    padding: 0 0 4rem 0;
+    font-weight: normal;
+}
+
+/*----------- NAVIGATION --------------*/
+#navWrapper {
+    background-color: rgb(223, 2, 2);
+}
+nav {
+    background-color: rgb(223, 2, 2);
+    padding: 0 2%;
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: rgb(208, 2, 2);
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: rgb(255, 115, 115);
+    color: #333;
+}
+nav ul li.active a {
+    background-color: rgb(151, 0, 0);
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+h1 {
+    margin:0;
+    padding-top: 2rem;
+}
+
+    $cbr:10px;
+ .infoCards{
+    display: flex;
+    flex-wrap: wrap;
+}
+ .card{
+    border: 1px solid rgb(140, 140, 140);
+    background-color: rgb(148, 35, 35);
+    border-radius: $cbr;
+    flex-basis: 100%;
+    margin: 1rem 1%;
+
+    section{
+        background-color:rgb(201, 2, 2);
+        color: #eee;
+        text-align: center;
+        padding: 1rem 0;
+        border-top-left-radius: $cbr - 1;
+        border-top-right-radius: $cbr - 1;
+    }
+    img{
+        padding: 1rem;
+        margin:auto;
+        width: 100%;
+        
+        
+    }
+    p {
+        padding: 1rem 2vw;
+
+    } 
+
+    
+}
+    a {
+        display:block;
+        background-color: rgb(187, 5, 5);
+        color:white;
+        padding: 1rem 0;
+        margin: 1rem 4vw;
+        border: 1px solid rgb(136, 136, 136);
+        text-align: center;
+        position: relative;
+        border-radius: $cbr;
+        
+    }
+    a:hover{
+    animation: buttonTest 1s 2;
+    background-color: lighten(rgb(187, 5, 5), 10%);
+    }
+    @keyframes buttonTest{
+        0% {bottom: 0px; animation-timing-function: ease-out ;}
+        25% {bottom: 30px; animation-timing-function: ease-in;}
+        50% {bottom: 0px; animation-timing-function: ease-out ;}
+        75% {bottom: 10px; animation-timing-function: ease-in;}
+        100% {bottom: 0px;}
+   
+    }
+
+}
+
+
+/*----------- FOOTER --------------*/
+div#footerWrapper{
+    background-color: rgb(223, 2, 2);
+}
+footer {
+    background-color: rgb(223, 2, 2);
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
