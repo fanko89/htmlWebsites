@@ -394,7 +394,7 @@ main {
     flex-basis: 100%;
     margin: 1rem 1%; }
     main .card section {
-      background-color: #c90202;
+      background-color: #b50000;
       color: #eee;
       text-align: center;
       padding: 1rem 0;
@@ -404,6 +404,13 @@ main {
       padding: 1rem;
       margin: auto;
       width: 100%; }
+    main .card img:hover {
+      animation: picAuto 2s 2; }
+@keyframes picAuto {
+  from {
+    transform: rotate(45deg); }
+  to {
+    transform: rotate(0deg); } }
     main .card p {
       padding: 1rem 2vw; }
   main a {
