@@ -468,7 +468,7 @@ main {
   display: block;
   max-width: 75rem; }
   main h1 {
-    color: #b69d12;
+    color: #2b2504;
     padding: 1rem 1%;
     font-weight: 700; }
   main .hero {
@@ -481,7 +481,7 @@ main {
   main figcaption {
     text-align: center;
     font-size: 1.5rem;
-    color: #b69d12;
+    color: #2b2504;
     font-weight: 550; }
   main picture.hero {
     display: block;
