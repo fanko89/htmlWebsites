@@ -80,7 +80,7 @@ main {
     max-width: 75rem;
 
     h1 {
-    color: darken($primaryColor, 40%);
+    color: darken(rgb(118, 118, 118), 40%);
     padding: 1rem $gutter;
     font-weight: $heavyWeight;
     }
@@ -98,7 +98,7 @@ main {
     figcaption {
         text-align: center;
         font-size: 1.5rem;
-        color: darken($primaryColor, 40%);
+        color: lighten(black, 25%);
         font-weight: 550;
     }
     picture.hero {
