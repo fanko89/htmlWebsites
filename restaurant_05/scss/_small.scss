@@ -1,0 +1,145 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    font-size: 16px;
+}
+
+/* header rules */
+div#headerWrapper {
+    background-color: $primaryColor;
+}
+
+/*header rules here*/
+header {
+    background-color: $primaryColor;
+    padding: 1rem 2%;
+}
+header h1 {
+    margin: 0;
+}
+header h2 {
+    margin: 0;
+}
+header figure.logo{
+    float: left;
+    margin: 0 2% 0 0;
+}
+ //end of header
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+//end nav
+
+
+/* main rules */
+div#contentWrapper {
+    background-color: white;
+}
+main {
+    background-color: rgb(188, 233, 178);
+    display: block; 
+    
+    max-width: 75rem;
+
+    h1 {
+    color: darken($primaryColor, 10%);
+    padding: 1rem $gutter;
+    font-weight: $heavyWeight;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    figure{
+    margin: 0;
+    width: 100%;
+    img {width: 100%;}
+    }//end of figure
+
+    figcaption {
+        text-align: center;
+        font-size: 1.5rem;
+        color: darken($primaryColor, 10%);
+        font-weight: 550;
+    }
+    picture.hero {
+        display:block;
+        width: 100%;
+        margin: 0;
+    }
+
+    picture.hero img {
+        width:100%;
+    }
+
+    figure.food {
+        float: right;
+        display:block;
+        max-width: 50%;
+        margin: 2rem 2%;
+    }
+    p{
+        font-size: 17px;
+        padding: 1rem $gutter;
+    }
+}//end of main
+
+
+/* footer rules */
+div#footerWrapper {
+    background-color: white;
+}
+footer {
+    
+    text-align: center;
+    padding: 1rem $gutter;
+    background-color: $primaryColor;
+    
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
