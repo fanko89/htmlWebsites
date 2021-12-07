@@ -478,21 +478,16 @@ main {
     width: 100%; }
     main figure img {
       width: 100%; }
-  main figcaption {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #404040;
-    font-weight: 550; }
   main picture.hero {
     display: block;
     width: 100%;
     margin: 0; }
   main picture.hero img {
     width: 100%; }
-  main figure.food {
+  main picture.food img {
+    width: 50%;
     float: right;
     display: block;
-    max-width: 50%;
     margin: 2rem 2%; }
   main p {
     font-size: 17px;

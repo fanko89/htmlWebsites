@@ -93,14 +93,8 @@ main {
     margin: 0;
     width: 100%;
     img {width: 100%;}
-    }//end of figure
-
-    figcaption {
-        text-align: center;
-        font-size: 1.5rem;
-        color: lighten(black, 25%);
-        font-weight: 550;
     }
+
     picture.hero {
         display:block;
         width: 100%;
@@ -111,16 +105,19 @@ main {
         width:100%;
     }
 
-    figure.food {
+
+    picture.food img {
+        width:50%;
         float: right;
         display:block;
-        max-width: 50%;
         margin: 2rem 2%;
     }
+
     p{
         font-size: 17px;
         padding: 1rem $gutter;
     }
+
 }//end of main
 
 
