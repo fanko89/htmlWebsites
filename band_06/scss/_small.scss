@@ -1,0 +1,141 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: rgb(142, 252, 164);
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: rgb(1, 146, 55);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: rgb(4, 172, 85);
+    color: #eee;
+    border-left: 1px solid rgb(85, 85, 85);
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: rgb(15, 130, 0);
+}
+nav ul li.active a {
+    background-color: rgb(67, 131, 83);
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+
+    section.gallery {
+        margin:auto;
+     
+
+
+    }
+    section.gallery figure{
+
+        width:100%;
+        height: 0;
+        padding-bottom: 61.3%; /* You define this doing image height/width * 100% */
+        position:relative;
+        margin: 0;
+    }
+
+    section.gallery figure img {
+        width: 100%;
+        height:auto;
+        position: absolute;
+    
+    }
+    section.bandmembers{
+        display: flex;
+        flex-wrap: wrap;
+        
+
+    }
+
+    section.bandmembers div.member{
+        flex-basis: 100%;
+        margin: 1rem .5%;
+      
+        
+    
+    }
+
+    section.bandmembers div.member img.derek{
+        width:50%;
+        float: right;
+        margin:3.6rem 0 0 .5rem;
+        clip-path: polygon(96% 5%, 79% 49%, 91% 100%, 8% 87%, 18% 3%);
+        text-align: center;
+        }
+
+    section.bandmembers div.member img.tyson{
+        width:50%;
+        float: left;
+        margin:3.6rem 0 0 .5rem;
+        clip-path: polygon(0% 15%, 27% 12%, 15% 0%, 85% 0%, 81% 22%, 100% 40%, 100% 85%, 79% 71%, 68% 98%, 15% 100%, 26% 76%, 0% 85%);
+        }
+
+    section.bandmembers div.member img.geff{
+        width:50%;
+        float: left;
+        margin:3.6rem 0 0 .5rem;
+        clip-path: polygon(50% 0%, 83% 15%, 100% 60%, 66% 90%, 25% 100%, 4% 80%, 10% 8%);
+        }
+
+    section.bandmembers div.member img.andrew{
+        width:40%;
+        float: right;
+        margin:3.6rem 0 0 .5rem;
+        clip-path: polygon(73% 0, 85% 28%, 100% 43%, 94% 78%, 73% 96%, 15% 99%, 7% 70%, 0% 43%, 22% 5%);
+        }
+
+}
+/*----------- FOOTER --------------*/
+footer {
+    background-color: rgb(142, 252, 164);
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
