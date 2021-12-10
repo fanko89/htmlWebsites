@@ -1,0 +1,90 @@
+header, main, footer {
+        max-width: 74rem;
+        margin:auto;
+
+    }
+    /*header rules*/
+    header {
+        
+        padding: 3rem 0 0 15px ;
+        h1 { 
+                
+            font-size: 2.5rem;
+        }
+        h2 {
+          
+            margin: 0;
+            padding: 0; 
+            font-size:1.5rem;
+            }
+        
+
+        }//end of header
+        
+    /*body rules*/
+    body {
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        
+        }
+    
+    nav{ 
+        li{
+        width:auto;
+        height: 45px;
+        }
+        li a {
+        font-size: larger;
+        margin-top: .6rem;
+        padding: .1rem 1rem;
+     
+        }
+//employees  
+    }
+    .column {
+        padding: 0 .5rem;
+       
+    }
+    .padding{
+        padding: 0 8rem 0 8rem;
+    }
+    section{
+        font-size: 1.3rem;
+    }
+    
+//tags
+.padding2{
+        padding: 0 0rem 0 5rem;
+    }
+      .card2{
+    
+       
+    
+     
+        padding-top: 1rem;
+        width: auto;
+        margin: 4rem 0;
+        text-align: center;
+        font-size: 15px;
+    
+    }
+    .card4 {
+   
+        border: none;
+        width:100%;
+        color: rgb(0, 0, 0);
+        padding: 11px 0;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+@for $i from 0 through 12 {
+        $w: ($i / 12) * 100%;
+        .large-#{$i} {flex-basis: $w;}
+    }//end of loop
+
+/*----------- FOOTER --------------*/
+    
