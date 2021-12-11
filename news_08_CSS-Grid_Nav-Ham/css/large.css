@@ -1,0 +1,67 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+    nav {
+
+        background: #4096ee; /* Old browsers */
+        background: -moz-linear-gradient(top,  #4096ee 0%, #29609b 99%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #4096ee 0%,#29609b 99%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #4096ee 0%,#29609b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#29609b',GradientType=0 ); /* IE6-9 */
+        
+            }
+            nav button{
+                display: none;
+            }
+            nav ul{
+                margin-left: 2%; 
+            }
+            nav ul li {
+                float: left;
+            }
+            nav ul li a {
+                border: none;
+                border-right: 1px solid rgba(0,0,0,0.3);
+                padding: .6rem 1rem;
+            }
+        
+        nav ul.hide{ /*displays nav when in medium */
+            display: block;
+        }
+
+        /*----main----*/
+        main .parentGrid {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        
+        }
+        main .parentGrid .leadGrid, .grid{
+            padding: .5rem 2vw;
+        }
+        main .parentGrid .leadGrid img, .grid img{
+            width:100%;
+        }
+        main .parentGrid .leadGrid{
+            grid-column: 1 /span 3;
+            grid-row:1 /span 2;
+        }
+        main .parentGrid span{
+            display: block;
+            text-align: center;
+            font-size: .75rem;
+        }
+
+
+
+    /*----footer----*/
+    footer .parentGrid2 {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+     
+        
+    }
+
+} /*end large */

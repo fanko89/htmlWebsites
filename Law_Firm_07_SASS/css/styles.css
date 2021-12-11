@@ -341,7 +341,7 @@ header {
 /* navigation rules */
 div#navWrapper {
   margin: auto;
-  max-width: 74rem;
+  max-width: 75rem;
   background-color: rgba(0, 41, 204, 0.316); }
 
 nav ul {
@@ -643,7 +643,7 @@ footer h4 {
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   header, main, footer {
-    max-width: 74rem;
+    max-width: 75rem;
     margin: auto; }
 
   /*header rules*/
