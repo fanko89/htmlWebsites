@@ -60,7 +60,10 @@ nav ul.hide {
 }
 
 /*----- main -----*/
-
+main {
+    max-width: 80rem;
+    margin:auto;
+}
 main .parentGrid {
 
     display: grid;
