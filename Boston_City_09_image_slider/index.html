@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content= "boston city 09">
+<meta name="author" content="Derek Ney">
+<title>boston city 09</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!--Font Awesome Link-->
+<script src="https://kit.fontawesome.com/cef974c2c1.js" crossorigin="anonymous"></script>
+
+<!-- Style Sheet -->
+<link href="css/styles.css" rel="stylesheet">
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<div id="headerWrapper">
+    <header>  
+      <div>
+      <h1>Martin, Tuft, and Brainly</h1>
+      <h2>Sound Coucil. Smart Business</h2>
+    </div>
+    </header>
+    </div>
+
+
+<!-- NAVIGATION HERE -->
+<nav class ="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id='primaryNav' class='hide'>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Opinion</a></li>
+        <li class="active"><a href="#">Politics</a></li>
+        <li><a href="#">Business</a></li> 
+    </ul>
+</nav>
+
+
+<!-- blogs -->
+<main>
+    <div class="slider">
+        <picture>
+            <source srcset="img/bockcity1.jpg" media="(max-width: 28.12rem)">
+            <source srcset="img/city1.jpg" media="(min-width: 28.12rem)">
+            <img src="img/bockcity1.jpg" alt="slider">
+            <div>slider Stuff
+            </div>
+        </picture>
+        <div>
+            <img src="img/city2.jpg" alt="slider">
+            <div>slider Stuff
+            </div>
+        </div>
+        <div>
+            <img src="img/city3.jpg" alt="slider">
+            <div>slider Stuff
+            </div>
+        </div>
+        <div>
+            <img src="img/city4.jpg" alt="slider">
+            <div>slider Stuff
+            </div>
+        </div>
+        <div>
+            <img src="img/city5.jpg" alt="slider">
+            <div>slider Stuff
+            </div>
+        </div>
+    </div>
+<div class = "padding3">
+   <div class = "flexed">
+        
+
+        <div class="column small-12 medium-6 large-3">
+            <div class="card3">
+            <img src="img/blog1.jpg" alt="blog">
+            <h1>Blog Post#1</h1>
+           <p>Aenean placerat nisi, elementum dolor a
+            pulvinar odio, turpis urna, est est tincidunt et
+            dis, tristique diam odio! Magna porttitor, nisi
+            mus pid nec diam mid! Phasellus habitasse! Vel
+            montes ac dignissim phasellus, cum ultrices
+            integer
+            </p>
+            <button class="button2">
+                <a>READ MORE</a>
+            </button>
+            </div>
+        </div>
+         
+        <div class="column small-12 medium-6 large-3">
+            <div class="card3">
+            <img src="img/blog2.jpg" alt="blog">
+            <h1>Blog Post#2</h1>
+           <p>Aenean placerat nisi, elementum dolor a
+            pulvinar odio, turpis urna, est est tincidunt et
+            dis, tristique diam odio! Magna porttitor, nisi
+            mus pid nec diam mid! Phasellus habitasse! Vel
+            montes ac dignissim phasellus, cum ultrices
+            integer
+            </p>
+            <button class="button2">
+                <a>READ MORE</a>
+            </button>
+            </div>
+        </div>
+        
+        
+        <div class="column small-12 medium-6 large-3">
+            <div class="card3">
+            <img src="img/blog3.jpg" alt="blog">
+            <h1>Blog Post#3</h1>
+           <p>Aenean placerat nisi, elementum dolor a
+            pulvinar odio, turpis urna, est est tincidunt et
+            dis, tristique diam odio! Magna porttitor, nisi
+            mus pid nec diam mid! Phasellus habitasse! Vel
+            montes ac dignissim phasellus, cum ultrices
+            integer
+            </p>
+            <button class="button2">
+                <a>READ MORE</a>
+            </button>
+            </div>
+        </div>
+        
+        <div class="column small-12 medium-6 large-3">
+            <div class="card3">
+            <img src="img/blog4.jpg" alt="blog">
+            <h1>Blog Post#4</h1>
+           <p>Aenean placerat nisi, elementum dolor a
+            pulvinar odio, turpis urna, est est tincidunt et
+            dis, tristique diam odio! Magna porttitor, nisi
+            mus pid nec diam mid! Phasellus habitasse! Vel
+            montes ac dignissim phasellus, cum ultrices
+            integer
+            </p>
+            <button class="button2">
+                <a>READ MORE</a>
+            </button>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+
+
+
+          
+    </main>
+    
+<!-- FOOTER HERE -->   
+
+    <footer>
+    <h4>&copy;2021 &bull;Derek Ney &bull; Phone &bull; <a href="https://fanko89.github.io/National_park_04/index.html">Login</a></h4>
+    </footer>
+
+   
+    
+   
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script type="text/javascript" src="slick/slick.min.js"></script>
+     <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots:ture,
+                infinite:true,
+                speed:1000,
+                cssEase:'ease-out',
+                autoplay: true,
+                arrows:false,
+                autoplaySpeed: 30000  
+            });
+        });
+    </script>
+    <script src="js/scripts.js"></script>
+    </body>
+    </html>
