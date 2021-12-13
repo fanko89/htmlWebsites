@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: white;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*----------- BODY --------------*/
+body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif; }
+
+/*----------- HEADER --------------*/
+/* logo rules */
+/* header rules */
+header {
+  display: flex;
+  padding: 2rem 0 2rem 0; }
+
+header img {
+  padding-left: 1rem 2%; }
+
+header h1 {
+  margin: 0;
+  padding-top: 1.8rem;
+  color: black;
+  font-size: 2.5rem; }
+
+/*----------- NAVIGATION --------------*/
+/*----------- MAIN --------------*/
+main {
+  padding: 0 2%;
+  min-height: 20rem; }
+
+main h1 {
+  padding: 4rem 0 1rem 0;
+  font-size: 1.5rem; }
+
+/*----------- FORM --------------*/
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  /* for rounded corners*/
+  padding: 2rem 2%; }
+
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 .5rem; }
+
+form label.top, form div {
+  display: block;
+  /* moves it below*/
+  padding-top: 1rem;
+  color: red;
+  font-size: .8rem; }
+
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  /* moves it below*/
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 3rem;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  /*doesn't expand all the way on large screens*/
+  background-color: rgba(0, 0, 0, 0.1);
+  /*gray behind input*/ }
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+  font-size: 1.5rem; }
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 3rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem; }
+
+form label.top input:required {
+  border-left: red solid 6px; }
+
+form label.top input:required:valid {
+  border-left: green solid 6px; }
+
+/*----------- FOOTER --------------*/
+footer {
+  background-color: #0990eb;
+  padding: .5rem 2%;
+  text-align: center; }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media only screen and (max-width: 34.9375rem) {
+  nav {
+    background-color: #0990eb; }
+
+  /* Navigation Button  -------------------------------------------------------- */
+  nav button {
+    width: 100%;
+    padding: .2rem 2vw;
+    text-align: left;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer; }
+
+  #hamburgerBtn span:nth-child(1) {
+    display: block; }
+
+  #hamburgerBtn span:nth-child(2) {
+    display: none; }
+
+  #hamburgerBtn.open span:nth-child(1) {
+    display: none; }
+
+  #hamburgerBtn.open span:nth-child(2) {
+    display: block; }
+
+  /* Navigation Bar -------------------------------------------------------- */
+  #primaryNav {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 998;
+    font-weight: normal; }
+
+  #primaryNav li.active a {
+    background-color: rgba(0, 0, 0, 0.25); }
+
+  #primaryNav li a {
+    display: block;
+    width: 100%;
+    padding: .75rem 2vw;
+    font-size: 14px;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2); }
+
+  #primaryNav li a:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+  /* Toggle the navigation bar to expand down  */
+  #primaryNav.open {
+    height: auto; }
+
+  /* Submenus – optional .parent class indicates dropdowns */
+  #primaryNav > li:hover > a {
+    background: rgba(0, 0, 0, 0.5); }
+
+  #primaryNav li.parent > a:after {
+    font-size: .75rem;
+    content: "\25BC";
+    color: rgba(255, 255, 255, 0.5);
+    float: right; }
+
+  #primaryNav li.parent > a:hover {
+    background: rgba(0, 0, 0, 0.75); }
+
+  /*hide the sub menu items by default*/
+  #primaryNav li ul {
+    display: none;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0; }
+
+  #primaryNav li ul a {
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    padding: 10px 5%;
+    font-weight: normal; }
+
+  #primaryNav li:hover ul {
+    display: block; } }
+/* End Mobile Styles */
+@media only screen and (min-width: 35rem) {
+  /*----------- BODY --------------*/
+  /*----------- HEADER --------------*/
+  /*  ----------------------- NAVIGATION --------------------------- */
+  nav button {
+    display: none; }
+
+  nav {
+    background-color: #0990eb; }
+    nav ul {
+      margin-left: 2%;
+      display: flex;
+      border-left: 1px solid rgba(0, 0, 0, 0.1); }
+    nav ul li {
+      border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    nav ul li a {
+      display: block;
+      border: none;
+      font-size: 1rem;
+      padding: .9rem 1.2rem;
+      color: white;
+      text-decoration: none;
+      /*transition*/
+      -webkit-transition: background 0.3s linear;
+      transition: background 0.3s linear; }
+    nav ul li a:hover {
+      background: #0881d2; }
+    nav ul li ul {
+      z-index: 99;
+      position: absolute;
+      background-color: #30a7f7;
+      left: -999rem;
+      width: 12rem;
+      display: flex;
+      flex-wrap: wrap; }
+    nav ul li ul li {
+      width: 12rem;
+      border-right: none;
+      border-top: solid 1px rgba(0, 0, 0, 0.2); }
+    nav ul li:hover ul {
+      /* this displays the menus as drop downs  */
+      left: auto;
+      margin-left: 0; }
+    nav li.active a {
+      background-color: rgba(0, 0, 0, 0.25); }
+
+  /*----------- MAIN --------------*/
+  /*----------- FOOTER --------------*/ }
+@media only screen and (min-width: 64rem) {
+  header, nav, main, footer {
+    max-width: 64rem;
+    margin: auto; }
+
+  /*header rules*/
+  /*----------- BODY --------------*/
+  body {
+    max-width: 75rem;
+    margin: auto; }
+
+  /*----------- HEADER --------------*/
+  /*----------- NAVIGATION --------------*/
+  /*----------- MAIN --------------*/
+  /*----------- FORM --------------*/
+  form label.sbs {
+    padding: .4rem 0; }
+
+  /*----------- FOOTER --------------*/ }
+
+/*# sourceMappingURL=styles.css.map */

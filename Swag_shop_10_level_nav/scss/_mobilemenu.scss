@@ -1,0 +1,77 @@
+// must be 1px less that the medium css breakpoint!!!
+@media only screen and (max-width: 34.9375rem) {
+	nav {background-color: $menuColor;}
+
+/* Navigation Button  -------------------------------------------------------- */    
+
+nav button {
+	width: 100%;
+    padding: .2rem 2vw;
+	text-align:left;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+	cursor:pointer;
+}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+/* Navigation Bar -------------------------------------------------------- */
+
+	
+	#primaryNav {
+        height: 0;
+        overflow: hidden;
+		margin: 0;
+		padding: 0;
+		z-index: 998;
+        font-weight: normal;
+	}
+    #primaryNav li.active a{background-color: rgba(0,0,0,0.25);}
+	#primaryNav li a {
+		display: block;
+		width: 100%;
+		padding: .75rem 2vw;
+		font-size: 14px;
+		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+		color: white;
+		text-decoration: none;
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+	#primaryNav li a:hover {
+		background-color: rgba(0,0,0,.5);
+	}
+
+	/* Toggle the navigation bar to expand down  */
+	#primaryNav.open {height: auto;}
+
+	/* Submenus – optional .parent class indicates dropdowns */
+	#primaryNav > li:hover > a {background: rgba(0,0,0,.5);}
+	#primaryNav li.parent > a:after {
+        font-size: .75rem;
+		content: "\25BC";
+		color: rgba(255,255,255,.5);
+		float: right;
+	}
+	#primaryNav li.parent > a:hover {
+		background: rgba(0,0,0,.75);
+	}
+    /*hide the sub menu items by default*/
+	#primaryNav li ul {
+		display: none;
+		background: rgba(0,0,0,.3);
+		padding: 0;
+	}
+	#primaryNav li ul a {
+		border-top: solid 1px rgba(0,0,0,0.2);
+		font-size: 12px;
+		padding: 10px 5%;
+		font-weight: normal;
+	}
+	#primaryNav li:hover ul {display: block;}
+} /* End Mobile Styles */

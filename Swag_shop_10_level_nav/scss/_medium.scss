@@ -1,0 +1,66 @@
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*  ----------------------- NAVIGATION --------------------------- */
+nav button {display: none;}
+nav {
+	background-color:$menuColor;
+
+// new stuff
+	ul {
+		margin-left: 2%;
+		display: flex;
+		border-left: 1px solid rgba(0,0,0,0.1);
+	}
+	ul li {border-right: 1px solid rgba(0,0,0,0.1);}
+	ul li a { 
+		display: block;
+		border:none; // undo small screen top border
+		font-size: 1rem;
+		padding: .9rem 1.2rem;
+		color: rgba(255,255,255,1);
+		text-decoration: none;
+		/*transition*/
+		-webkit-transition: background 0.3s linear; 
+		transition: background 0.3s linear;
+	}
+	ul li a:hover {background: darken($menuColor,5%);}
+	
+	
+	ul li ul { //rules for the sub menu items
+		z-index:99;
+		position: absolute;
+		background-color: lighten($menuColor, 10%);
+		left: -999rem; // pushes the menu way off to the side
+		width: 12rem; // match this width woith the list items below
+		display: flex;
+		flex-wrap: wrap;
+	}
+ 	ul li ul li {
+		width: 12rem;
+		border-right: none;
+		border-top: solid 1px rgba(0,0,0,0.2);
+	}
+
+ 	ul li:hover ul { /* this displays the menus as drop downs  */
+		left: auto;
+		margin-left: 0;
+	}
+	
+	li.active a{background-color: rgba(0,0,0,0.25);}
+	
+} // end nav
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+
