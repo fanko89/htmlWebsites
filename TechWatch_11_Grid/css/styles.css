@@ -327,7 +327,7 @@ body {
 header {
   grid-area: header;
   padding: .5rem 2%;
-  background-color: #ffa8f0; }
+  background-color: #d0d0d0; }
   header h1 {
     margin: 0; }
   header h2 {
@@ -346,7 +346,7 @@ a.myjump {
 
 nav {
   grid-area: navigation;
-  background-color: #b68aff;
+  background-color: #2e70fd;
   height: 100vh; }
 
 nav ul {
@@ -379,7 +379,7 @@ nav ul li.active a {
 /*----------- HAMBURGER --------------*/
 div#hamburger {
   grid-area: hamburger;
-  background-color: #feff98; }
+  background-color: #2e70fd; }
 
 /*----------- MAIN --------------*/
 main {
@@ -394,10 +394,53 @@ main {
     margin: 0;
     padding: .5rem 0; }
 
+main .parentGrid {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "img1" "txt1" "img2" "txt2" "img3" "txt3"; }
+
+main .parentGrid .rightGrid {
+  grid-column: 2/span 1; }
+
+main .parentGrid .leftGrid {
+  grid-column: 1 /span 1; }
+
+main .parentGrid figure {
+  display: block;
+  text-align: center;
+  font-size: .75rem; }
+
+main .parentGrid .img1 {
+  grid-area: img1;
+  width: auto; }
+
+main .parentGrid .img2 {
+  grid-area: img2;
+  width: auto; }
+
+main .parentGrid .img3 {
+  grid-area: img3;
+  width: auto; }
+
+main .parentGrid .txt1 {
+  grid-area: txt1; }
+
+main .parentGrid .txt2 {
+  grid-area: txt2; }
+
+main .parentGrid .txt3 {
+  grid-area: txt3; }
+
+main .parentGrid figure img {
+  padding: 3rem 2%;
+  width: 100%; }
+
 /*----------- FOOTER --------------*/
 footer {
   grid-area: footer;
-  background-color: #b5ff98;
+  background-color: #2157cc;
   padding: .5rem 2%;
   text-align: center; }
 
@@ -413,6 +456,10 @@ footer {
     grid-template-columns: 150px auto; }
 
   /*----------- BODY --------------*/
+  main .parentGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "txt1 img1" "img2 txt2" "txt3 img3"; }
+
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   a.myjump {
@@ -432,6 +479,15 @@ footer {
     margin: auto; }
 
   /*----------- BODY --------------*/
+  main .parentGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "txt1 img1" "img2 txt2" "txt3 img3"; }
+
+  main .parentGrid figure {
+    display: block;
+    text-align: center;
+    font-size: .75rem; }
+
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   nav ul li {

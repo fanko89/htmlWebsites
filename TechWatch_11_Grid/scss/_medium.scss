@@ -10,7 +10,14 @@ div#pageWrapper {
 
 
 /*----------- BODY --------------*/
+main .parentGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "txt1 img1"
+    "img2 txt2"
+    "txt3 img3";
 
+}
 
 
 /*----------- HEADER --------------*/
