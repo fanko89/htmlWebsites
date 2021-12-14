@@ -409,10 +409,49 @@ div.flexed {
   margin: 5rem 0 0 0;
   padding: 0; }
 
-.card3 {
+.card3 div:nth-child(1) {
+  background-image: url("../img/hover1.jpg"); }
+
+.card3 div:nth-child(2) {
+  background-image: url("../img/hover2.jpg"); }
+
+.card3 div:nth-child(3) {
+  background-image: url("../img/hover3.jpg"); }
+
+.card3 div:nth-child(4) {
+  background-image: url("../img/hover4.jpg"); }
+
+.card3 div a {
+  display: block;
+  width: 100%;
+  height: 300px;
+  text-decoration: none;
+  padding: 0 2%;
+  transition: all .5s ease-in; }
+
+.card3 div:nth-child(1) a {
   border: 1px solid #8c8c8c;
   background-color: cornflowerblue;
   margin: 1rem 0; }
+
+.card3 div:nth-child(2) a {
+  border: 1px solid #8c8c8c;
+  background-color: cornflowerblue;
+  margin: 1rem 0; }
+
+.card3 div:nth-child(3) a {
+  border: 1px solid #8c8c8c;
+  background-color: cornflowerblue;
+  margin: 1rem 0; }
+
+.card3 div:nth-child(4) a {
+  border: 1px solid #8c8c8c;
+  background-color: cornflowerblue;
+  margin: 1rem 0; }
+
+div a:hover {
+  background: none;
+  text-shadow: 0 0 4px black; }
 
 .card3 h1 {
   display: block;
@@ -951,16 +990,6 @@ footer h4 {
 
   section {
     font-size: 1.3rem; }
-
-  .card4 {
-    border: none;
-    width: 100%;
-    color: black;
-    padding: 11px 0;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    cursor: pointer; }
 
   .large-0 {
     flex-basis: 0%; }
