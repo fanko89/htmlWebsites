@@ -1,0 +1,30 @@
+
+div#pageWrapper {
+    grid-template-areas:
+    "header header" //doubling make it have both left and right column
+    "navigation content"
+    "footer footer"
+    ;
+    grid-template-columns: 150px auto;
+}
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+a.myjump{display:none;}
+nav {height: auto;}
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
