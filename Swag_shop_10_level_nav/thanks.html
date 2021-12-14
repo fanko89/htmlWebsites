@@ -2,45 +2,50 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Fill Me In">
-<meta name="author" content="John Doe">
+<meta name="description" content="Thanks Page">
+<meta name="author" content="Derek Ney">
 
 <!-- This start file was build by Paul Cheney  -->
-<title>HTML5 Start Site by Paul Cheney</title>
+<title>Thanks Page</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-
-<!-- STYLE SHEETS -->
-<link href="css/normalize.css" rel="stylesheet">
-<!-- phone-default -->
-<link href="css/small.css" rel="stylesheet">
-<!-- enhance-tablet -->
-<link href="css/medium.css" rel="stylesheet">
-<!-- enhance-desktop -->
-<link href="css/large.css" rel="stylesheet">
-
+<link href="css/styles.css" rel="stylesheet">
 
      
 </head>
 <body>
 <!-- HEADER HERE -->
-	<header>
- <h1>Course Proposal</h1>
-        <h2>Designing Web Forms</h2>
-    </header>
+
+<header>
+    <img src="images/logo.jpg" alt="logo">
+<h1>SWAG</h1>
     
+</header>
+     
+
+
     
-<!-- NAVIGATION HERE -->
     <nav class="clearfix">
-        <ul >
+        <button id="hamburgerBtn">
+            <span>&#9776;OPEN</span>
+            <span>&#9776;CLOSE</span>
+        </button>
+        
+        <ul id="primaryNav">
             <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
-            <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>    
+            <li class="partent"><a href="#">Products</a>
+                <ul>
+                    <li><a herf="#">Water Bottles</a></li>
+                    <li><a herf="#">Hats</a></li>
+                    <li><a herf="#">Shirts</a></li>
+                </ul>
+                <li><a href="#">Deals</a></li>
+            <li class="active"><a href="index.html">Order</a></li>
+            <li><a href="#">Customer Reviews</a></li>    
         </ul>
     </nav>
     
@@ -55,9 +60,9 @@
     </main>
     
 <!-- FOOTER HERE -->   
-    <footer>
-        &copy; 2018 &bull; Paul Cheney &bull; 123-555-6789
-    </footer>
-<script src="js/scripts.js"></script>
+<footer>
+    &copy; 2021 &bull; Derek Ney &bull; <a href="https://fanko89.github.io/Swag_shop_10_level_nav/index.html">link</a> 
+</footer>
+<script src="js/menuToggle.js"></script>   
 </body>
 </html>
