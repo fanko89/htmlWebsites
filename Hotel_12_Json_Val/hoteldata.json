@@ -1,0 +1,25 @@
+[   {
+    "name":"Lexington Airport",
+    "photo":"images/lexington.jpg",
+    "address":["1555 North Canyon Dr.","Lexington, VA 12345"],
+    "phone":"1-307-886-1234"
+    },
+    {
+    "name":"Baltimore Downtown",
+    "photo":"images/baltimore.jpg",
+    "address":["2300 North Main St.", "baltimore, CH 33432"],
+    "phone":"1-385-555-9875"
+    },
+    {
+    "name":"serenade",
+    "photo":"images/serenade.jpg",
+    "address":["2019 Pennsylvania Ave","Washington, DC 20125"],
+    "phone":"1-303-389-2000"
+    },
+    {
+    "name":"Hyatt Place Washington",
+    "photo":"images/hyatt.jpg",
+    "address":["1555 North Canyon Dr.","Lexington VA 88765"],
+    "phone":"1-202-828-2500"
+    }
+]
