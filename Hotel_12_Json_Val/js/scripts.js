@@ -16,7 +16,7 @@ fetch(apiURL)
     myImageTag.src = myList[i].photo
     myImageTag.alt = myList[i].name
     console.log(myList[i].photos)
-
+ //figcaption
     let myCaptionTag = document.createElement('figcaption')
     myCaptionTag.className ='figCaption'
     myCaptionTag.textContent = myList[i].name
@@ -37,7 +37,7 @@ fetch(apiURL)
     myParagraphTag.className = 'addressText'
     myParagraphTag.textContent = myList[i].address
 
-
+//address 
     let myAddressTag = document.createElement('span')
     myAddressTag.className = 'spanAddressTag'
     myAddressTag.appendChild(myCarTag)
