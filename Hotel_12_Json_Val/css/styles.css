@@ -304,6 +304,140 @@ template {
   display: none; }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+div#pageWrapper {
+  display: grid;
+  margin: 0;
+  grid-template-areas: "header" "content" "footer" "navigation"; }
+
+/*----------- BODY --------------*/
+body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif; }
+
+/*----------- HEADER --------------*/
+header {
+  grid-area: header;
+  padding: 1rem 2% 0 2%;
+  background-color: #1d0f0f;
+  color: white; }
+
+header h1 {
+  margin: 0;
+  margin: auto; }
+
+header h2 {
+  margin: 0;
+  font-weight: normal; }
+
+/*----------- NAVIGATION --------------*/
+nav {
+  width: 100%;
+  background-color: #1d0f0f;
+  overflow: auto;
+  grid-area: navigation; }
+
+nav a {
+  display: grid;
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 33.33%;
+  /* Four links of equal widths */
+  text-align: center; }
+
+nav a ion-icon {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40%;
+  font-size: 2rem; }
+
+nav a:hover {
+  background-color: #000; }
+
+nav a.active {
+  background-color: #000;
+  color: #fff; }
+
+/*----------- MAIN --------------*/
+main {
+  padding: 0; }
+
+main h1 {
+  margin: 1rem 2%; }
+
+main div#myCards {
+  margin: 0px;
+  padding: 0px; }
+
+section.sectionTag {
+  border: 1px solid #595959;
+  background-color: #fffa6b;
+  border-radius: 2px;
+  margin: 1rem 0; }
+
+figure.fig {
+  margin: 4rem 10% 1rem 10%;
+  width: 80%;
+  position: relative; }
+
+img {
+  width: 100%;
+  border-radius: 20px; }
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3.1px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: .5rem 2; }
+
+div.divTag {
+  display: grid;
+  padding: 0 4rem 0 3.2rem;
+  grid-template-columns: 1fr 1fr; }
+
+span.spanAddressTag {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1rem; }
+
+i.fa-car {
+  font-size: 2rem;
+  margin-top: 1rem; }
+
+span.spanPhoneTag {
+  display: flex;
+  font-size: 1rem;
+  padding-top: 1rem; }
+
+i.phone {
+  padding-top: .5rem; }
+
+i.fa-phone {
+  font-size: 2rem; }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
