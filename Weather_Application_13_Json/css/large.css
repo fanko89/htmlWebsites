@@ -1,0 +1,26 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+
+    header{
+      
+        margin:auto;
+        padding:2% 0;
+    }
+
+    h1{
+        font-size: 3rem;
+    
+    }
+    h2{
+        font-size: 2rem;
+    
+    }
+    section#weatherforecast{
+ 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding-top: 8rem;
+    
+    }
+
+} /*end large */

@@ -1,0 +1,42 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+      
+    
+    /*----main----*/
+    main .parentGrid {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    
+    }
+    main .parentGrid .leadGrid, .grid{
+        padding: .5rem 2vw;
+    }
+
+    /*large image is 533.750 */
+    main .parentGrid .leadGrid img, .grid img{
+        width:100%;
+    }
+    main .parentGrid .leadGrid{
+        grid-column: 1 /span 3;
+    }
+
+    /*----footer----*/
+    footer .parentGrid2 {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        
+     
+        
+    }
+    footer .parentGrid2 .grid2{
+        margin: 0 0 0 4rem;
+        padding-bottom: 1rem;
+    }
+
+    
+} /*end medium */
+
