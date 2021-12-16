@@ -71,7 +71,7 @@ fetch(apiURL)
    
 
 
-    document.getElementById('myCards').appendChild(mySectionTag)
+    document.getElementById('cards').appendChild(mySectionTag)
    
    }
 
