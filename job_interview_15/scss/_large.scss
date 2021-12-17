@@ -67,6 +67,7 @@ body {
 
         .grid .col4{
             grid-column:1 /span 2;
+            padding:2.3rem 0;
             }
             .grid .col3{
                 height:500px;
@@ -74,15 +75,15 @@ body {
      
                 .client{
                     margin-top: 6rem;
-                    display:flex;
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+                   
                 }
                 .client2{
+                    
                     display: none;
                 }
-                .client3{
-                    display: none;
-                }
-            
  
 
 //employees  
