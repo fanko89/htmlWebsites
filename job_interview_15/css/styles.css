@@ -823,7 +823,8 @@ footer h4 {
     grid-template-columns: 3fr 1fr; }
 
   .client {
-    display: none; }
+    display: none;
+    overflow: hidden; }
 
   .client2 {
     display: none; }
