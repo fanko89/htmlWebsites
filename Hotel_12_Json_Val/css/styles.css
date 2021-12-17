@@ -360,7 +360,7 @@ nav a {
 nav a ion-icon {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 40%;
+  padding: 0 11vw;
   font-size: 2rem; }
 
 nav a:hover {
@@ -377,9 +377,8 @@ main {
 main h1 {
   margin: 1rem 2%; }
 
-main div#myCards {
-  margin: 0px;
-  padding: 0px; }
+div#cards {
+  margin: 0px; }
 
 section.sectionTag {
   border: 1px solid #595959;
@@ -409,12 +408,13 @@ figcaption {
 
 div.divTag {
   display: grid;
-  padding: 0 4rem 0 3.2rem;
-  grid-template-columns: 1fr 1fr; }
+  padding: 2vw;
+  grid-template-columns: 2fr 1fr; }
 
 span.spanAddressTag {
   display: flex;
   flex-wrap: nowrap;
+  margin-left: 4vw;
   font-size: 1rem; }
 
 i.fa-car {
@@ -443,18 +443,17 @@ i.fa-phone {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   nav a ion-icon {
-    padding: 0 44%;
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin-left: 2.7vw; }
 
   /*----------- MAIN --------------*/
   section.sectionTag {
     margin: .2rem; }
 
-  main div#myCards {
+  div#cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    padding: auto; }
+    grid-template-rows: auto; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */

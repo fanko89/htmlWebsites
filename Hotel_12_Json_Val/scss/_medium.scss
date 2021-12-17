@@ -11,26 +11,22 @@
 
 /*----------- NAVIGATION --------------*/
 nav a ion-icon{
-    padding:0 44%;
     font-size: 2rem;
+    margin-left: 2.7vw;
 }
+
 
 
 /*----------- MAIN --------------*/
 
 section.sectionTag{
 margin:.2rem;
+
 }
-
-main div#myCards{
-
-
+div#cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    padding: auto;
-    
-
 }
 
 
