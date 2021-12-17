@@ -476,7 +476,7 @@ h1 {
 .button {
   background-color: #e9e9e9;
   border: none;
-  width: 90%;
+  width: 100%;
   color: black;
   padding: 11px 0;
   text-align: center;
@@ -490,6 +490,10 @@ h1 {
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
   cursor: pointer; }
+
+.grid a {
+  text-decoration: none;
+  color: #333; }
 
 .client {
   display: none; }
