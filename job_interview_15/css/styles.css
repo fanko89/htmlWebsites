@@ -821,12 +821,18 @@ footer h4 {
     grid-template-columns: 3fr 1fr; }
 
   .client {
+    width: 100%;
+    height: auto;
     display: none; }
 
   .client2 {
+    width: 100%;
+    height: auto;
     display: flex; }
 
   .client3 {
+    width: 100%;
+    height: auto;
     display: none; }
 
   .medium-0 {
