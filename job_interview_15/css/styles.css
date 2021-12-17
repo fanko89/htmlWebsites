@@ -417,7 +417,7 @@ section#box {
 .boxtext .left p {
   color: white; }
 
-.boxtext .left li {
+.boxtext .left ul {
   color: white;
   padding-left: 4rem; }
 
