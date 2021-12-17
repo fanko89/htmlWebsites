@@ -409,7 +409,7 @@ figcaption {
   font-size: 2rem;
   background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
-  padding: .5rem 2; }
+  padding: .5rem 2%; }
 
 div.divTag {
   display: grid;
