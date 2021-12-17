@@ -211,7 +211,8 @@ h1{
 }
 
 .grid .col3{
-    height:800px;
+    height:20%;
+    padding:2rem 2%;
     }
 .button {
     background-color:rgb(233, 233, 233); 
@@ -233,8 +234,32 @@ h1{
   }
 .client{
     width: 100%;
+    display: none;
+}
+.client2{
+    width:100%;
+    display: flex;
+}
+.client3{
+    width:100%;
+    display: none;
 }
 
+
+
+.grid .col img{
+    width:100%;
+    padding:2rem 2%;
+    }
+.grid .col2 img{
+    width:100%;
+    padding:2rem 2%;
+    }
+
+    .grid .col3 img{
+        width:100%;
+        padding:2rem 2%;
+        }
 
 /*loop SASS*/
 
