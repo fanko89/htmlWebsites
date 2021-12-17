@@ -329,6 +329,7 @@ header {
   padding: 1rem 0 0 0;
   background-color: white;
   max-width: 75rem;
+  padding-bottom: 4px;
   margin: auto; }
   header img {
     float: left;
@@ -345,7 +346,8 @@ header {
 /* navigation rules */
 nav {
   max-width: 75rem;
-  margin: auto; }
+  margin: auto;
+  border-top: 1px solid; }
   nav ul {
     margin: 0;
     padding: 0; }
@@ -436,7 +438,8 @@ section#about {
 
 h1 {
   margin-bottom: -2px;
-  color: #0583c2; }
+  color: #0583c2;
+  padding-left: .7rem; }
 
 .card h1 {
   display: block;
@@ -490,10 +493,6 @@ h1 {
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
   cursor: pointer; }
-
-.grid a {
-  text-decoration: none;
-  color: #333; }
 
 .client {
   display: none; }

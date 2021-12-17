@@ -27,6 +27,7 @@ header {
 padding:1rem 0 0 0;
 background-color:white;
 max-width: 75rem;
+padding-bottom: 4px;
 margin:auto;
     img{
         float:left;
@@ -56,6 +57,8 @@ margin:auto;
 nav {
     max-width: 75rem;
     margin:auto;
+    border-top: 1px solid;
+
     ul{margin:0; padding: 0;}
     li {list-style-type: none;}
     li.active {background-color: #333}
@@ -166,9 +169,9 @@ margin:auto;
 
 
 h1{
-    margin-bottom: -2px;
-   
+    margin-bottom: -2px;   
     color: $primaryColor;
+    padding-left: .7rem;
 }
 
 
@@ -180,7 +183,8 @@ h1{
     font-size: 2.1rem;
 }
 
-
+.card{
+}
 .card img{
     margin: 0;
     width: 100%;
@@ -241,10 +245,8 @@ h1{
     border-bottom-right-radius: 10px - 1;
     cursor: pointer;
   }
-  .grid a{text-decoration: none;
-color:#333}
-.client{
 
+.client{
     display: none;
   
 }
