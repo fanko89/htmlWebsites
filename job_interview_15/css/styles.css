@@ -439,16 +439,13 @@ h1 {
 
 .card h1 {
   display: block;
-  padding: none;
+  padding: 0;
   text-decoration: none;
   color: #0583c2;
   font-size: 2.1rem; }
 
-.card p {
-  padding: none; }
-
 .card img {
-  margin: none;
+  margin: 0;
   width: 100%; }
 
 .grid {
@@ -462,7 +459,7 @@ h1 {
   font-size: 2.1rem; }
 
 .grid .card img {
-  margin: none;
+  margin: 0;
   width: 100%; }
 
 .grid .col3 {
