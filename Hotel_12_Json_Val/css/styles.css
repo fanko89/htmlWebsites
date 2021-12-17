@@ -343,24 +343,29 @@ header h2 {
 nav {
   width: 100%;
   background-color: #1d0f0f;
-  overflow: auto;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
   grid-area: navigation; }
 
-nav a {
-  display: grid;
-  float: left;
-  padding: 12px;
+nav ul li a {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
   color: white;
   text-decoration: none;
-  font-size: 17px;
-  width: 33.33%;
-  /* Four links of equal widths */
-  text-align: center; }
+  font-size: 17px; }
+
+ul {
+  display: flex; }
+
+ul li {
+  flex-basis: 33.3%; }
 
 nav a ion-icon {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 11vw;
+  display: block;
+  width: 100%;
   font-size: 2rem; }
 
 nav a:hover {
@@ -378,7 +383,7 @@ main h1 {
   margin: 1rem 2%; }
 
 div#cards {
-  margin: 0px; }
+  margin-bottom: 100px; }
 
 section.sectionTag {
   border: 1px solid #595959;
@@ -443,8 +448,7 @@ i.fa-phone {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   nav a ion-icon {
-    font-size: 2rem;
-    margin-left: 2.7vw; }
+    font-size: 2rem; }
 
   /*----------- MAIN --------------*/
   section.sectionTag {
