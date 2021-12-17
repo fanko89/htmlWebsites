@@ -486,13 +486,19 @@ h1 {
   cursor: pointer; }
 
 .client {
-  display: none; }
+  display: none;
+  width: 100%;
+  height: auto; }
 
 .client2 {
-  display: flex; }
+  display: flex;
+  width: 100%;
+  height: auto; }
 
 .client3 {
-  display: none; }
+  display: none;
+  width: 100%;
+  height: auto; }
 
 .grid .col img {
   width: 100%;
@@ -818,18 +824,12 @@ footer h4 {
     grid-template-columns: 3fr 1fr; }
 
   .client {
-    width: 100%;
-    height: auto;
     display: none; }
 
   .client2 {
-    width: 100%;
-    height: auto;
     display: flex; }
 
   .client3 {
-    width: 100%;
-    height: auto;
     display: none; }
 
   .medium-0 {
